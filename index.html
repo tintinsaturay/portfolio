@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7cec93ce73.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="dlllogo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#moreme">More About Me</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="heaer-text">
+            <p>Web Developer</p>
+            <h1>Hi, im <span>Martin</span><br>Rexzander B. Saturay</h1>
+        </div>
+    </div>
+</div>
+<!------about----->
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="tintin.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Im a student web developer and with a strong foundation in HTML, CSS and JavaScript. 
+                    My expertise lies in developing aesthetically appealing and responsive  interfaces that captivate users on various devices. 
+                    In addition, my proficiency with a variety of frameworks and libraries, including Angular, Vue and React.js, allows me to create dynamic and feature rich web solutions</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experiences')">Experience</p>
+                    <p class="tab-links" onclick="opentab('educations')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Andriod/IOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiences">
+                    <ul>
+                        <li><span>Pet Groomer</span><br>VFC Pet Accessories And Grooming</li>
+                        <li><span>Waiter</span><br>Symon Resto Bar</li>
+                        <li><span>Bagger</span><br>Super Value Corporation</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="educations">
+                    <ul>
+                        <li><span>College</span><br>Dalubhasaan Ng Lungsod ng Lucena</li>
+                        <li><span>Secondary Senior Highschool</span><br>St. Augustine School of Nursing</li>
+                        <li><span>Secondary Junior Highschool</span><br>Quezon National Highschool</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------servicess-------->
+
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title"> My Project</h1>
+        <div class="project-list">
+            <div>
+                <i class="fa-solid fa-calculator"></i>
+                <h2>Calculator</h2>
+                <a href="https://tintinsaturay.github.io/online-working-calculator/">Click Here</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-question"></i>
+                <h2>Quiz Application</h2>
+                <a href="https://tintinsaturay.github.io/Quiz-Application/">Click Here</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-dumbbell"></i>
+                <h2>My Landing Page</h2>
+                <a href="https://tintinsaturay.github.io/landing-page/">Click Here</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------more of me------->
+<div id="moreme">
+    <div class="container">
+        <h1 class="sub-title"> More of Me</h1>
+        <div class="mypic">
+            <div class="pic">
+                <img src="moreme6.jpg">
+            </div>
+            <div class="pic">
+                <img src="moreme7.jpg">
+            </div>
+            <div class="pic">
+                <img src="moreme8.jpg">
+            </div>
+            <div class="pic">
+                <img src="moreme9.jpg">
+            </div>
+            <div class="pic">
+                <img src="moreme10.jpg">
+            </div>
+            <div class="pic">
+                <img src="moreme11.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-----------------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> martinsaturay010@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 09922074899</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/martin.saturay"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/martinsaturay/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com/MartinSaturay"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name"  required>
+                    <input type="email"  name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Messsage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Developed by Martin Rexzander Saturay <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+        
+
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxZGCTBripvP4hsHNC7pXSQjDwRwU75ksfDeANkggAFj8L9Iw2jnOp2pvcBeJ-ZAxzABQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
